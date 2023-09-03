@@ -2,6 +2,7 @@
   padding: 0;
   text-align: center;
   list-style: none;
+  font-weight: bold;
 }
 .btnLogin {
   background-color: transparent;
@@ -31,6 +32,5 @@
 @media (width > 375px) {
   .authLinks {
     display: flex;
-    gap: 1rem;
   }
 }
