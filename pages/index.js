@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 
 // Components
 import BtnToggleMenu from '../components/Layout/Header/BtnToggleMenu/BtnToggleMenu';
+import Logo from '../components/Layout/Header/Logo/Logo';
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section className={styles.hero}>
-        <BtnToggleMenu></BtnToggleMenu>
+        <Logo></Logo>
       </section>
     </div>
   );
