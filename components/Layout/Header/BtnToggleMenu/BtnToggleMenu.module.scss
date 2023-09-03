@@ -1,0 +1,35 @@
+.burgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(30px + 1rem);
+  margin-left: auto;
+  margin-top: -0.5rem;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burgerMenu div {
+  height: 3px;
+  background: #aaa;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.burgerMenu div:nth-child(1) {
+  margin-top: 0px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
