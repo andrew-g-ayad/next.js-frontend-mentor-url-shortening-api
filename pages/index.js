@@ -5,7 +5,8 @@ import styles from '../styles/Home.module.css';
 // Components
 import BtnToggleMenu from '../components/Layout/Header/BtnToggleMenu/BtnToggleMenu';
 import Logo from '../components/Layout/Header/Logo/Logo';
-import AuthLinks from '../components/Layout/Header/AuthLinks/AuthLinks';
+import NavLinks from '../components/Layout/Header/NavBar/NavLinks/NavLinks';
+import AuthLinks from '../components/Layout/Header/NavBar/AuthLinks/AuthLinks';
 
 export default function Home() {
   return (
@@ -22,6 +23,8 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section className={styles.hero}>
+        <Logo></Logo>
+        <NavLinks></NavLinks>
         <AuthLinks></AuthLinks>
       </section>
     </div>

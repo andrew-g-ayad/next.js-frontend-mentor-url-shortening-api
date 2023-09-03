@@ -4,6 +4,7 @@ body {
   margin: 0;
   display: grid;
   place-content: center;
+  grid-template-columns: fit-content;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
