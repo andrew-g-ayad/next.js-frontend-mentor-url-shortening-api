@@ -1,0 +1,24 @@
+.btnLogin {
+  background-color: transparent;
+  border: transparent;
+  color: hsl(0, 0%, 100%);
+  padding-block: 1.5rem;
+  color: hsl(0, 0%, 75%);
+  padding: 0.5em 1.5em;
+}
+
+.btnRegister {
+  padding: 0.5em;
+  background: hsl(180, 77%, 63%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  border-radius: 50px;
+  padding: 0.45em 2em;
+  font-size: 1rem;
+  text-align: center;
+}
+.btnLogin,
+.btnRegister {
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 // Components
 import BtnToggleMenu from '../components/Layout/Header/BtnToggleMenu/BtnToggleMenu';
 import Logo from '../components/Layout/Header/Logo/Logo';
+import AuthLinks from '../components/Layout/Header/AuthLinks/AuthLinks';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section className={styles.hero}>
-        <Logo></Logo>
+        <AuthLinks></AuthLinks>
       </section>
     </div>
   );
