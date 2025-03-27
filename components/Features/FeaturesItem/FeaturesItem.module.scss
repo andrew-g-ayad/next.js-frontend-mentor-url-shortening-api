@@ -4,6 +4,9 @@
   background-color: $white;
   padding: 2rem;
   border-radius: 5px;
+  @media (min-width: $mobile) {
+    padding: 1.65rem;
+  }
 }
 .image_container {
   margin-top: -5.3rem;
@@ -14,6 +17,12 @@
   display: grid;
   place-content: center;
   border-radius: 100%;
+  @media (min-width: $mobile) {
+    margin-top: -4.8rem;
+    margin-left: 0;
+    width: 90px;
+    height: 90px;
+  }
 }
 .image {
   width: 40px;
@@ -25,6 +34,10 @@
   font-size: 1.25rem;
   margin-top: 0.95rem;
   color: $clr-very-dark-violet;
+  @media (min-width: $mobile) {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
 }
 
 .content {
@@ -33,4 +46,7 @@
   font-weight: 500;
   line-height: 1.62rem;
   margin-top: 0.75rem;
+  @media (min-width: $mobile) {
+    text-align: left;
+  }
 }
