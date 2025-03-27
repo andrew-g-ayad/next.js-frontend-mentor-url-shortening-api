@@ -1,1 +1,32 @@
-$body-color: #eee;
+/* Fonts */
+
+/* Colors */
+/* primary */
+$clr-cyan: hsl(180, 77%, 63%);
+$clr-cyan-light: hsl(180, 72%, 74%);
+$clr-dark-violet: hsl(257, 27%, 26%);
+
+/* secondary */
+$clr-red: hsl(0, 87%, 67%);
+
+/* neutral */
+$white: hsl(0, 0%, 100%);
+$clr-gray: hsl(0, 0%, 75%);
+$clr-background-gray: #eee;
+$clr-grayish-violet: hsl(257, 7%, 63%);
+$clr-very-dark-blue: hsl(255, 11%, 22%);
+$clr-very-dark-violet: hsl(260, 8%, 14%);
+
+/* margins */
+
+/* paddings */
+$pd-page-inline: 1.375rem;
+$pd-btn: 1em 2em;
+$pd-box: 1rem;
+
+/* Border radios */
+$btn-radius: 5px;
+$box-radius: 10px;
+
+/* width */
+$mw-container: 1100px;

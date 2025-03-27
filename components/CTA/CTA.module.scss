@@ -1,0 +1,32 @@
+@import './../SCSS/_variables.module';
+@import './../SCSS/_screens.module';
+.section {
+  margin-top: 5rem;
+  background-color: $clr-dark-violet;
+  color: $white;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 1.5rem;
+  height: 14.5rem;
+  background-image: url('./../../public/images/bg-boost-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn_cta {
+  display: block;
+  width: max-content;
+  padding-inline: 2.5rem;
+  padding-block: 0.74rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $white;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: $clr-cyan;
+}

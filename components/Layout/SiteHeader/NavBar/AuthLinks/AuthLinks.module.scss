@@ -1,0 +1,58 @@
+@import './../../../../SCSS/variables.module';
+@import '../../../../SCSS/screens.module';
+.authLinks {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+  font-weight: 600;
+  margin-left: auto;
+  @media (max-width: $mobile) {
+    width: 100%;
+    padding-bottom: 1.5rem;
+    padding-inline: 0;
+    flex-direction: column;
+    margin-inline: auto;
+  }
+}
+.btnLogin,
+.btnRegister {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  @media (max-width: $mobile) {
+    width: 100%;
+    font-weight: 500;
+  }
+}
+
+.btnLogin {
+  padding: 0.5em 1.5em;
+  color: $clr-gray;
+  @media (max-width: $mobile) {
+    color: $white;
+    padding-block: 1.5rem;
+  }
+}
+.authLinks li {
+  list-style: none;
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+
+.btnRegister {
+  background: hsl(180, 77%, 63%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 50px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5em 1.5em;
+  &:hover {
+    background-color: $clr-cyan-light;
+  }
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}

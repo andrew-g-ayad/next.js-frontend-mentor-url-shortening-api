@@ -1,0 +1,66 @@
+@import '../SCSS/screens.module';
+@import '../SCSS/variables.module';
+
+.section {
+  margin-top: -5rem;
+}
+.shorten_box {
+  background-color: $clr-dark-violet;
+  border-radius: 10px;
+  margin-inline: 1.375rem;
+  padding: 2.125rem;
+  background-image: url(../../public/images/bg-shorten-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  @media (min-width: $mobile) {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    background-image: url('../../public/images/bg-shorten-desktop.svg');
+  }
+}
+.form {
+  width: 100%;
+}
+.shorten_box input {
+  outline-style: none;
+  width: 100%;
+  text-align: start;
+  padding: 0.75em;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.error_hidden {
+  display: none;
+}
+.error_message {
+  position: absolute;
+  font-style: italic;
+  text-align: start;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $clr-red;
+}
+
+.btn_shorten {
+  width: 100%;
+  min-width: 125px;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 0.75em;
+  font-size: 1.05rem;
+  font-weight: 500;
+  background-color: $clr-cyan;
+  color: $white;
+  border: none;
+  &:hover {
+    background-color: $clr-cyan-light;
+  }
+  @media (min-width: $mobile) {
+    margin-top: 0;
+    width: 30%;
+  }
+}

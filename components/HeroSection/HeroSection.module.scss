@@ -1,0 +1,87 @@
+@import '../SCSS/screens.module';
+@import '../SCSS/variables.module';
+.hero {
+  display: flex;
+  overflow-x: hidden;
+  background: $white;
+  padding-bottom: 10rem;
+  flex-direction: column-reverse;
+  padding-inline: $pd-page-inline;
+  @media (min-width: $mobile) {
+    flex-direction: row;
+    padding-top: 4rem;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $mobile) {
+    max-width: $mw-container;
+    margin-inline: auto;
+    flex-direction: row;
+  }
+}
+.hero_content {
+  order: 1;
+  @media (min-width: $mobile) {
+    order: 0;
+    text-align: left;
+    min-width: 50%;
+  }
+}
+.title {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: $clr-very-dark-violet;
+  font-weight: 700;
+  line-height: 1.125em;
+  @media (min-width: $mobile) {
+    text-align: left;
+    margin-top: 5rem;
+    font-size: 4.6rem;
+  }
+}
+.message {
+  font-size: 1.1rem;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  color: $clr-grayish-violet;
+  line-height: 1.75em;
+  @media (min-width: $mobile) {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-top: 0;
+    font-weight: 500;
+  }
+}
+.btn_cta {
+  padding: 0.5em 2em;
+  margin-top: 1.5rem;
+  color: $white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border: none;
+  background-color: $clr-cyan;
+  border-radius: 100vw;
+  &:hover {
+    cursor: pointer;
+    background-color: $clr-cyan-light;
+  }
+}
+
+.hero_img {
+  margin-top: 0.6rem;
+  @media (min-width: $mobile) {
+    // min-width: 50%;
+  }
+}
+.hero_img img {
+  width: 30rem;
+  height: 315.625px;
+  object-fit: cover;
+  @media (min-width: $mobile) {
+    height: 29.6rem;
+    width: 45rem;
+    margin-left: 3rem;
+  }
+}

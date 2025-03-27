@@ -1,0 +1,46 @@
+@import '../../SCSS/variables.module';
+@import '../../SCSS/screens.module';
+
+.site_header {
+  padding-inline: $pd-page-inline;
+  padding-top: 2rem;
+  background: $white;
+  @media (max-width: $mobile) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: $mw-container;
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+}
+.burger_menu {
+  display: none;
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(30px + 1rem);
+    margin-left: auto;
+    margin-top: -0.5rem;
+    padding: 0.5rem;
+    z-index: 10;
+  }
+}
+.burger_menu span {
+  display: block;
+  height: 3px;
+  background: $clr-gray;
+  width: 100%;
+  margin-top: 6px;
+  z-index: 5;
+}
+.burger_menu span:nth-child(1) {
+  margin-top: 0px;
+}

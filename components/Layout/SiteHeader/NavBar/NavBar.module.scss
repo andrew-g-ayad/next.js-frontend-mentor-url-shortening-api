@@ -1,0 +1,33 @@
+@import '../../../SCSS/variables.module';
+@import '../../../SCSS/screens.module';
+// Desktop First
+.navBar {
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  top: 6rem;
+  background-color: transparent;
+  font-weight: 600;
+  @media (max-width: $mobile) {
+    position: absolute;
+    width: 90%;
+    flex-direction: column;
+    background-color: $clr-dark-violet;
+    padding: 0.5rem 1.5rem;
+    opacity: 0;
+    top: -22.5rem;
+    left: 5%;
+    right: 5%;
+    border-radius: $box-radius;
+    transition: all ease-in-out 300ms, top ease-out 200ms;
+  }
+}
+.toggleNav {
+  opacity: 1;
+  top: 6rem;
+}

@@ -1,0 +1,60 @@
+@import '../../SCSS/variables.module';
+.short_item_container {
+  background-color: $white;
+  border-radius: 5px;
+}
+.short_item {
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 1rem;
+}
+.short_item p {
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.short_item * {
+  text-align: start;
+}
+.link {
+  margin-inline: 1rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $clr-very-dark-blue;
+}
+
+.short_link {
+  position: relative;
+
+  font-size: 1rem;
+  font-weight: 500;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 16ch;
+  color: $clr-cyan;
+  margin-block: 0.8rem;
+}
+.flex_group {
+  border-top: 1px solid $clr-background-gray;
+}
+.flex_group * {
+  margin-inline: 1rem;
+}
+.copy_btn {
+  width: calc(100% - 2rem);
+  text-align: center;
+  border: none;
+  padding: 0.45rem;
+  border-radius: 5px;
+  background-color: $clr-cyan;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 500;
+}

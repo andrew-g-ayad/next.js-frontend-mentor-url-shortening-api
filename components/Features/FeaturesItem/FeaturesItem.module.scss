@@ -1,0 +1,36 @@
+@import '../../SCSS/variables.module';
+@import '../../SCSS/screens.module';
+.card {
+  background-color: $white;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.image_container {
+  margin-top: -5.3rem;
+  margin-inline: auto;
+  background-color: $clr-dark-violet;
+  width: 106px;
+  height: 106px;
+  display: grid;
+  place-content: center;
+  border-radius: 100%;
+}
+.image {
+  width: 40px;
+  height: 40px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 0.95rem;
+  color: $clr-very-dark-violet;
+}
+
+.content {
+  font-size: 1rem;
+  color: $clr-grayish-violet;
+  font-weight: 500;
+  line-height: 1.62rem;
+  margin-top: 0.75rem;
+}

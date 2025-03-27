@@ -1,0 +1,30 @@
+@import '../../../../SCSS/variables.module';
+@import '../../../../SCSS/screens.module';
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    width: 100%;
+    padding-block: 1.5rem;
+    padding-inline: 0;
+    border-bottom: 0.01rem solid $clr-grayish-violet;
+  }
+}
+.navLinks li {
+  list-style: none;
+  padding: 0.75rem 1rem;
+}
+
+.navLinks a {
+  color: $clr-gray;
+  font-weight: 700;
+  text-decoration: none;
+  @media (max-width: $mobile) {
+    color: $white;
+    font-weight: 500;
+  }
+}
