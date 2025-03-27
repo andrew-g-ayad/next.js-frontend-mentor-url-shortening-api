@@ -12,10 +12,16 @@
   background-image: url('./../../public/images/bg-boost-mobile.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-width: $mobile) {
+    background-image: url('./../../public/images/bg-boost-desktop.svg');
+  }
 }
 .title {
   font-size: 1.5rem;
   font-weight: 700;
+  @media (min-width: $mobile) {
+    font-size: 2rem;
+  }
 }
 
 .btn_cta {
@@ -29,4 +35,9 @@
   text-decoration: none;
   border-radius: 50px;
   background-color: $clr-cyan;
+  @media (min-width: $mobile) {
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    font-weight: 700;
+  }
 }
