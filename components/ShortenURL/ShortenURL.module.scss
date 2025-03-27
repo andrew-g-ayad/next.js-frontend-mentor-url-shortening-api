@@ -2,12 +2,17 @@
 @import '../SCSS/variables.module';
 
 .section {
+  width: 100%;
   margin-top: -5rem;
+  margin-inline: 1.375rem;
+  @media (min-width: $mobile) {
+    max-width: 1100px;
+    margin-inline: auto;
+  }
 }
 .shorten_box {
   background-color: $clr-dark-violet;
   border-radius: 10px;
-  margin-inline: 1.375rem;
   padding: 2.125rem;
   background-image: url(../../public/images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;
